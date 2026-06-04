@@ -1,30 +1,28 @@
 # p152hash - Sponge-Based Cryptographic Hash Function
 
-### Overview
+## Overview
 This project implements a cryptographic hash function using the sponge construction with a custom 48-byte permutation function (p152).
 
-It demonstrates how modern hash functions can be built from permutation-based primitives
-___
+It demonstrates how modern hash functions can be built from permutation-based primitives.
 
-### Features
-- Sponge construction
+## Features
+- Sponge construction (rate/capacity design)
 - Custom permutation function (p152)
 - Bitwise padding scheme (10*1 rule)
 - Byte-level state manipulation
 - Configurable output length
-___
 
-### Build
-`gcc p152hash.c -o p152hash`
-___
-
-### Concepts Demonstrated
+## Concepts Used
 - Cryptographic hash function design
-- Sponge construction (Keccak-style design)
+- Sponge construction (Keccak-style architecture)
 - Permutation-based cryptography
 - Bitwise operations
-- Memory-level programming in C
-___
+- Low-level memory manipulation in C
 
-### Notes
-This implementation is for education purposes and is not intended for production cryptographic use.
+## Build
+```bash
+gcc p152hash.c -o p152hash
+```
+
+## Notes
+This implementation is for educational purposes and is not intended for production cryptographic use.
